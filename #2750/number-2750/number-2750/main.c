@@ -7,20 +7,21 @@
 //  예제 입력: 5 5 2 3 4 1
 //  예제 출력: 1 2 3 4 5
 
-#include<stdio.h>
-
+#include <stdio.h>
 
 int N, array[1000] = { 0 };
 int tmp;
 
 
-void solveStart(){
+void howManyNumsDoWeSort(){
     scanf("%d", &N);
     for (int i = 0; i < N; i++) {
         scanf("%d", &array[i]);
     }
-    
-    //buble sort starts
+}
+
+
+void bubbleSort(){
     for (int i = 0; i < N; i++) {
         for (int j = 0; j < N - 1; j++) {
             if (array[j + 1] < array[j]) {
@@ -30,9 +31,20 @@ void solveStart(){
             }
         }
     }
+}
+
+
+void printSortedArray(){
     for (int i = 0; i < N; i++) {
         printf("%d\n", array[i]);
     }
+}
+
+
+void solveStart(){
+    howManyNumsDoWeSort();
+    bubbleSort();
+    printSortedArray();
 }
 
 
