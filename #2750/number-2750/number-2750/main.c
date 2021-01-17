@@ -2,8 +2,10 @@
 //  main.c
 //  boj-number-2750
 //
-//  Created by 지민호 on 2021/01/16.
+//  Created by 전지희 on 2021/01/16.
 //
+//  예제 입력: 5 5 2 3 4 1
+//  예제 출력: 1 2 3 4 5
 
 #include<stdio.h>
 
