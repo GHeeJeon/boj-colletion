@@ -49,6 +49,7 @@ void solveStart(){
 
 
 int main() {
+    printf("끼끼");
     solveStart();
     return 0;
 }
